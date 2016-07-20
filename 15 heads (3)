@@ -1,0 +1,12 @@
+
+echo 'que tal tu corazon?' >> README.md;
+git commit -am 'Asking the important questions'
+cat .git/refs/heads/master
+
+-------------------------------------------------------
+
+6246e19902e9708fa588c57ea1947821dd62fae1 # it changed!
+
+Question:
+
+How did git know to update this file?

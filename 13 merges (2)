@@ -1,0 +1,19 @@
+
+git cat-file -p HEAD
+
+->
+
+tree 246dadd4144e71b5cf12730f09a3100a24f0d0ce
+parent a9d4e276736fafd986e93e9f749637a86b2fbfcd # "Modifying the README"
+parent e0aba8dea5954596abddb1e1abb70c4ab50e6f3f # "Starting some js"
+author Terrence Wong <wongterrencew@gmail.com> 1469006453 +0200
+committer Terrence Wong <wongterrencew@gmail.com> 1469006453 +0200
+
+Merge branch 'feature'
+
+-------------------------------------------------------
+
+git cat-file -p HEAD^{tree}
+
+100644 blob 389a12b87165281837e803f84170a787bd4cefd3    README.md
+100644 blob f19b4438047ad49c0ec1654d73c7bb4d37256025    index.js

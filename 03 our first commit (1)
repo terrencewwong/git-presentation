@@ -1,0 +1,12 @@
+
+Let's start by adding a README
+
+Question:
+
+We have not committed the README...
+but does git "know" about our file? (y/n)
+
+-------------------------------------------------------
+
+echo 'Holi mis mieles!` > README.md;
+git add README.md;

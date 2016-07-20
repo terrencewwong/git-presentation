@@ -1,0 +1,33 @@
+
+Annotated tags point to tag objects!
+
+-------------------------------------------------------
+
+git cat-file -t 5af6fdeaf0b2b94fb2119e95f8b5f95bdf0d4622
+
+->
+
+tag
+
+-------------------------------------------------------
+
+git cat-file -p 5af6fdeaf0b2b94fb2119e95f8b5f95bdf0d4622
+
+object 6246e19902e9708fa588c57ea1947821dd62fae1
+type commit
+tag annotated_tag
+tagger Terrence Wong <wongterrencew@gmail.com> 1469017963 +0200
+
+some message
+
+-------------------------------------------------------
+
+Questions:
+
+- Why does an annotated tag create a git object?
+- What else can be tagged?
+
+Bonus Question:
+
+Given the contents of the tag, what command would I run to
+create the git object?

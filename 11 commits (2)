@@ -1,0 +1,32 @@
+
+Conceptually commits are something like this:
+
+Commit {
+  string sha1TreePointer;
+  string sha1FirstParentCommitPointer;
+  string sha1SecondParentCommitPointer;
+  User author;
+  Timestamp authoredTimestamp;
+  User committer;
+  Timestamp committedTimeStamp;
+  string message;
+}
+
+-------------------------------------------------------
+
+tree a5eeb6dc15960bb42ee5b756ca4c6aef9b5bb12c
+author Terrence Wong <wongterrencew@gmail.com> 1469000622 +0200
+committer Terrence Wong <wongterrencew@gmail.com> 1469000622 +0200
+
+Add README
+
+-------------------------------------------------------
+
+Question:
+
+Where is the parent for our example?
+
+Bonus Questions:
+
+- When does a commit have two parents?
+- What's the difference between the author and committer?

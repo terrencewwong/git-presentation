@@ -1,0 +1,64 @@
+
+Remember this question:
+
+"When does a commit have two parents?"
+
+A merge commit is a special type of commit with TWO
+parents instead of just one.
+
+-------------------------------------------------------
+
+git checkout -b feature;
+echo 'console.log("Hola mundo!")' > index.js;
+git add index.js;
+git commit -m 'Starting some js';
+
+git checkout master;
+echo 'some extra nonsense' >> README.md;
+git commit -am 'Modifying the README';
+
+git merge feature;
+
+-------------------------------------------------------
+
+Before `git merge feature`:
+
+master                     feature
+  |                          |
+  v                          v
+"Modifying the README"    "Starting some js"
+  |                          |
+  v                          |
+"git rocks my socks" <--------
+  |
+  v
+"Add README"
+
+-------------------------------------------------------
+
+After `git merge feature`:
+
+master                         feature 
+  |                               |
+  v                               |
+"Merge branch 'feature'" -----    |
+  |                          |    |
+  v                          v    v
+"Modifying the README"    "Starting some js"
+  |                          |
+  v                          |
+"git rocks my socks" <--------
+  |
+  v
+"Add README"
+
+-------------------------------------------------------
+
+Questions:
+
+What are the contents of the merge commit?
+What does the tree of "Merge branch 'feature'" look like?
+
+Bonus Question:
+
+What is a fast-forward when merging?

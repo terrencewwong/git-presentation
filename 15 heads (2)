@@ -1,0 +1,25 @@
+
+Branches are pointers to commits!
+
+-------------------------------------------------------
+
+cat .git/refs/heads/master
+
+->
+
+dde018ea91d7d4e34234828b799ed7533616b6eb # Merge branch 'feature'
+
+-------------------------------------------------------
+
+cat .git/refs/heads/feature
+
+->
+
+e0aba8dea5954596abddb1e1abb70c4ab50e6f3f # Starting some js
+
+-------------------------------------------------------
+
+Question:
+
+If we add another commit onto master, what happens to
+.git/refs/heads/master?

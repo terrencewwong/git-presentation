@@ -1,0 +1,21 @@
+
+git status tells us our README is in the staging area...
+
+Question:
+
+Is there more "evidence"? (y/n)
+
+-------------------------------------------------------
+
+git status
+
+->
+
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   README.md

@@ -1,0 +1,21 @@
+
+Did you know git has a command that does all of this for us?
+
+i.e. It can take a file or file contents, construct this git
+object format, compress it, and then save the file with the
+correct sha1.
+
+-------------------------------------------------------
+
+echo 'Holi mis mieles' | git hash-object --stdin -w
+
+->
+
+-------------------------------------------------------
+
+38570a2fc50247a315ccc922863ae5d052781d67
+
+Question:
+
+Are we missing any information in the blob?
+

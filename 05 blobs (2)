@@ -1,0 +1,26 @@
+
+Turns out this file is just compressed with middle-out
+compression (jk it's zlib)
+
+-------------------------------------------------------
+
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+import zlib
+f = open(".git/objects/38/570a2fc50247a315ccc922863ae5d052781d67")
+contents = f.read()
+zlib.decompress(contents)
+
+->
+
+'blob 16\x00Holi mis mieles\n'
+
+-------------------------------------------------------
+
+Question:
+
+What is the meaning of the decompressed contents?
+

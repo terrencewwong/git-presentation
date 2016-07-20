@@ -1,0 +1,27 @@
+
+Remember this question...
+
+"Where does the file name come from?"
+
+.git/objects/38/570a2fc50247a315ccc922863ae5d052781d67
+
+This is a sha1 digest of the git object!
+
+The first two characters of the digest are used for the directory
+name. The last 38 characters are the filename itself.
+
+Our example: "blob 16\x00Holi mis mieles\n"
+
+Python 2.7.10 (default, Oct 23 2015, 19:19:21)
+[GCC 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.0.59.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+import hashlib
+sha1 = hashlib.new('sha1')
+sha1.update("blob 16\x00Holi mis mieles\n")
+sha1.hexdigest()
+
+->
+
+'38570a2fc50247a315ccc922863ae5d052781d67'

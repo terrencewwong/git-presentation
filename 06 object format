@@ -1,0 +1,22 @@
+
+All git objects have the following format:
+
+store = "${header}${content}"
+
+Where...
+
+content = the file's contents
+header = "${type} ${content.length}\x00"
+
+Our example:
+
+"blob 16\x00Holi mis mieles\n"
+  ^  ^ ^  ^ |_______________|
+  |  | |  |         ^
+type | |  |         |
+   space  |         |
+       |  |         |
+ content.length     |
+          |         |
+       null byte    |
+                 content

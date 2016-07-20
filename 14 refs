@@ -1,0 +1,17 @@
+
+Let's explore something new in the .git directoy!
+
+-------------------------------------------------------
+
+ls .git/refs
+
+->
+
+heads/
+tags/
+
+-------------------------------------------------------
+
+Bonus Question:
+
+There is another type of ref, what is it?

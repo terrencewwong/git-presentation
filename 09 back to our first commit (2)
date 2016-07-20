@@ -1,0 +1,19 @@
+
+There are three objects meow!
+
+-------------------------------------------------------
+
+find .git/objects -type f
+
+->
+
+.git/objects/38/570a2fc50247a315ccc922863ae5d052781d67 # the blob
+.git/objects/a5/eeb6dc15960bb42ee5b756ca4c6aef9b5bb12c # ??
+.git/objects/dd/12676446709b20127155ecf38a9c5d165a2edb # ??
+
+-------------------------------------------------------
+
+Bonus Question:
+
+If you run these commands yourself, the last object from above
+will not have the same filename (the sha1 is different). Why?

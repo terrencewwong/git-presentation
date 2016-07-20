@@ -1,0 +1,16 @@
+
+git has a notion of the "current" state of the repo.
+This is called the HEAD
+
+The HEAD is a pointer to a head! (or a single commit)
+
+In this case git will recognize it needs to update the
+ref with the name 'master' when you make a commit.
+
+-------------------------------------------------------
+
+cat .git/HEAD
+
+->
+
+ref: refs/heads/master

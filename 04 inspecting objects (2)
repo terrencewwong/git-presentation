@@ -1,0 +1,19 @@
+
+Git comes with a utility called `cat-file`
+
+It let's us decode git objects!
+
+-------------------------------------------------------
+
+git cat-file -p 38570a2fc50247a315ccc922863ae5d052781d67
+
+->
+
+Holi mis mieles
+
+-------------------------------------------------------
+
+Question:
+
+But what are the true contents of this git object?
+

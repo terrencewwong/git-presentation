@@ -1,0 +1,26 @@
+
+Trees in git correspond closely to directories in unix
+
+Conceptually trees are something like this:
+
+Tree {
+  List<TreeEntry> entries;
+}
+
+TreeEntry {
+  uint mode;
+  string type;
+  string sha1pointer;
+  string filename;
+}
+
+sha1pointer := sha1 digest of either a tree or blob
+
+-------------------------------------------------------
+
+Our example:
+
+100644 blob 38570a2fc50247a315ccc922863ae5d052781d67    README.md
+  ^     ^   |______________________________________|       ^
+  |     |                      |                           |
+ mode  type         sha1pointer to the blob             filename

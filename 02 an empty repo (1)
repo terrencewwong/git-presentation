@@ -1,0 +1,17 @@
+
+Let's initialize a repo and see what git creates for us!
+
+-------------------------------------------------------
+
+git init; ls -AR
+
+->
+
+.git/
+  HEAD
+  config
+  description
+  hooks/
+  info/
+  objects/
+  refs/

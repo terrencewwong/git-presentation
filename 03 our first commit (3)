@@ -1,0 +1,17 @@
+
+Let's take a look at our objects directory!
+
+-------------------------------------------------------
+
+find .git/objects -type f
+
+->
+
+-------------------------------------------------------
+
+Questions:
+
+- What information does this file contain?
+- Where does the file name come from?
+
+.git/objects/38/570a2fc50247a315ccc922863ae5d052781d67

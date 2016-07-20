@@ -1,0 +1,15 @@
+
+What about an annotated tag?
+
+It's also a pointer!
+
+git tag -am 'some message' annotated_tag;
+cat .git/refs/tags/annotated_tag
+
+5af6fdeaf0b2b94fb2119e95f8b5f95bdf0d4622
+
+-------------------------------------------------------
+
+Question:
+
+What is this sha1 hash pointing to?

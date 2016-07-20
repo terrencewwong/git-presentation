@@ -1,0 +1,19 @@
+
+Heads are branches!
+
+So for every branch we have a file inside of .git/refs/heads
+
+-------------------------------------------------------
+
+ls .git/refs/heads
+
+->
+
+feature
+master
+
+-------------------------------------------------------
+
+Question:
+
+What are the contents of these files?

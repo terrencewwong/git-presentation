@@ -1,0 +1,18 @@
+
+Let's inspect .git/objects/a5/eeb6dc15960bb42ee5b756ca4c6aef9b5bb12c
+
+-------------------------------------------------------
+
+git cat-file -p a5eeb6dc15960bb42ee5b756ca4c6aef9b5bb12c
+
+->
+
+100644 blob 38570a2fc50247a315ccc922863ae5d052781d67    README.md
+
+-------------------------------------------------------
+
+git cat-file -t a5eeb6dc15960bb42ee5b756ca4c6aef9b5bb12c
+
+->
+
+tree

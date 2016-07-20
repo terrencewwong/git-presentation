@@ -1,0 +1,11 @@
+
+Surprise! An empty repository has no objects!
+
+-------------------------------------------------------
+
+ls .git/objects/
+
+->
+
+info/
+pack/

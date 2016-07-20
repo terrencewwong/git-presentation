@@ -1,0 +1,17 @@
+
+So what is the difference between a tag and a branch?
+
+git tag a_tag;
+cat .git/refs/tag/a_tag
+
+->
+
+6246e19902e9708fa588c57ea1947821dd62fae1
+
+-------------------------------------------------------
+
+cat .git/refs/heads/master
+
+->
+
+6246e19902e9708fa588c57ea1947821dd62fae1

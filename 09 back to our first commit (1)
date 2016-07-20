@@ -1,0 +1,12 @@
+
+Let's actually commit our README now
+
+Question:
+
+Does committing create more git objects? (y/n)
+
+-------------------------------------------------------
+
+# echo 'Holi mis mieles' > README.md;
+# git add README.md;
+git commit -m 'Add README'

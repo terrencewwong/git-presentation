@@ -1,0 +1,26 @@
+
+If we add another commit, then this commit's parent should be
+our first commit!
+
+-------------------------------------------------------
+
+echo 'git rocks my socks' >> README.md
+git commit -am 'Another commit'
+git cat-file -p HEAD
+
+->
+
+tree 1c14297657b4db14187fa4a9cc75256bec6bcbcf
+parent dd12676446709b20127155ecf38a9c5d165a2edb
+author Terrence Wong <wongterrencew@gmail.com> 1469003917 +0200
+committer Terrence Wong <wongterrencew@gmail.com> 1469003917 +0200
+
+Another commit
+
+-------------------------------------------------------
+
+Question:
+
+How many git objects do we have now?
+
+

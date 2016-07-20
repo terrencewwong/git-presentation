@@ -1,0 +1,11 @@
+
+Git calls this type of object a "blob"
+
+We can also verify this with cat-file
+-------------------------------------------------------
+
+git cat-file -t 38570a2fc50247a315ccc922863ae5d052781d67
+
+->
+
+blob

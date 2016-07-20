@@ -1,0 +1,26 @@
+
+Let's recap what we know so far
+
+1. We know of three types of objects in git:
+
+- Blob
+- Tree
+- Commit
+
+2. Objects are indexed by a sha1 hash based off
+   of their content
+
+3. Commits point to a tree i.e. a commit is a
+   snapshot of all your files in a moment of time
+
+4. Trees point to sub-trees or blobs, i.e. trees model
+   directories
+
+5. Blobs are used to save file contents
+
+6. Commits also have parent(s), i.e. a pointer to
+   the previous state of your files
+
+Bonus Question:
+
+Are there any other objects we have not considered?

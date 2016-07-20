@@ -1,0 +1,43 @@
+
+Here are some main points that I think are worth remembering:
+
+1. Everything in git is represented with objects
+
+2. Objects are stored in a file whose name comes from
+   the sha1 hash that is calculated from the contents
+   of the object
+
+3. Git keeps track of different states by simply having
+   pointers to those states! i.e. Branches point to
+   commits, tags may point to commits etc.
+
+Now with this knowledge here are some fun questions to think about:
+
+1. Given that each deploy to prod is tagged, how would I see a diff
+   of what has changed between the deploys? (On the lowest level what
+   information will git require?)
+
+2. Is it inefficient to store compressed copies of each state a file
+   has been in? What advantages does this model give you? How could
+   you try to save disk space?
+
+3. What is the difference between ~ and ^ i.e. what are
+   the differences between:
+     - HEAD~1
+     - HEAD~2
+     - HEAD^1
+     - HEAD^2
+
+4. `git fetch` is a non-destructive operation. What does it do?
+
+And finally here are some questions you might not
+be able to answer yet but would be super duper cool
+to know!
+
+1. What is git's merge algorithm?
+
+2. What is git's rebase algorithm?
+
+3. What is git's packing heuristic?
+
+4. How does the stash work?
